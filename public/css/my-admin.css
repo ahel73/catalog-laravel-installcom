@@ -1,0 +1,122 @@
+/* кастомные стили */
+
+.login-card-body .input-group .form-control, .register-card-body .input-group .form-control {
+    border-right: 1px solid rgb(206, 212, 218);
+}
+.login-box-msg img{
+  margin-top: 10px;
+}
+.logo_admin_left_bar{
+  width: 73%;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 11px;
+}
+.sidebar .user-panel{
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+}
+.font_ava.fa-user-circle::before {
+    content: "\f2bd";
+    font-size: 40px;
+    color: white;
+    background: rgb(0, 123, 255);
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.user-panel, .user-panel .info{
+  white-space: normal;
+}
+.layout-fixed .wrapper .sidebar {
+    overflow: auto;
+}
+.main-sidebar, .main-sidebar::before {
+    width: 300px;
+}
+body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-footer, body:not(.sidebar-mini-md) .main-header {
+    margin-left: 300px;
+}
+.nav-sidebar .ic_lvl_1{
+    margin-right: 10px;
+}
+[class*="sidebar-dark-"] .nav-sidebar > .nav-item > .nav-treeview {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+.content-wrapper{
+    padding: 20px;
+}
+h1{
+    font-size: 2rem;
+}
+.add_product{
+    /* border: 1px solid black; */
+    margin-top: 32px;
+}
+.add_product label{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.add_product h2{
+    font-size: 1.5rem;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px rgb(0, 123, 255) solid ;
+}
+input[type='text']{
+    width: 100%;
+}
+.fields_random p{
+    margin-bottom: 25px;
+    background: rgb(236, 239, 241);
+    padding: 30px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.fields_random p > span{
+    width: 45%;
+}
+.select{
+    display: flex;
+}
+.select label{
+    margin-right: 30px;
+}
+.btn_send_ajax {
+    position: relative;
+}
+.btn_send_ajax::after{
+    content: '\f110';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    animation: faSpin 1s steps(8) infinite;
+    position: absolute;
+    left: 105%;
+    color: black;
+    display: none;
+}
+.btn_send_ajax.btn_send_ajax_active {
+    margin-right: 1.5em;
+    background-color: rgba(0, 105, 217, .2);
+    border-color: currentColor;
+    color: rgba(255,255,255, 1);
+}
+.btn_send_ajax_active::after {
+    display: inline-block;
+}
+@keyframes faSpin {
+    0% {
+        transform: rotate(0deg);        
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
